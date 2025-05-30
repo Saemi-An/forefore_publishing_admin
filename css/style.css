@@ -88,7 +88,6 @@ input[type=number] {
 }
 
 input[type=number],
-input[type=password],
 input[type=url],
 input[type=email],
 input[type=tel],
@@ -149,7 +148,7 @@ button {
   background-color: inherit;
 }
 
-input[type=text] {
+input[type=text], input[type=password] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -615,13 +614,6 @@ body {
   border-radius: 1.2rem;
 }
 
-.test {
-  width: 8rem;
-  height: 8rem;
-  object-fit: contain;
-  border-radius: 1.2rem;
-}
-
 .view-btn {
   display: flex;
   gap: 1.6rem;
@@ -1020,4 +1012,40 @@ body {
 }
 .Django-toast .Django-toast--error {
   background-color: rgba(255, 93, 0, 0.6);
+}
+
+.login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #EFE5CA;
+}
+.login__sect {
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -40%);
+  width: 48rem;
+  padding: 0.8rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+}
+.login__sect__img {
+  width: 24.8rem;
+  height: 6.8rem;
+  margin-top: 0.8rem;
+}
+.login__sect__input {
+  margin-bottom: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.login__sect__input input {
+  width: 24rem;
 }/*# sourceMappingURL=style.css.map */
