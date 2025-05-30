@@ -1,0 +1,71 @@
+.hamburger-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 50;
+}
+.hamburger {
+    // @include position(right, 0, top, 0);
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    background-color: $beige01;
+    padding-top: rem(44);
+    padding-left: rem(16);
+    padding-right: rem(16);
+
+    display: flex;
+    flex-direction: column;
+    gap: rem(32);
+
+    &__icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: rem(16);
+
+        &__logo {
+            @include bg('logo.svg', center, null, rem(256), auto);
+            width: rem(256);
+            height: rem(48);
+            background-size: contain;
+        }
+
+        &__icon {
+            display: flex;
+            gap: rem(15);
+        }
+    }
+
+    &__line {
+        border: rem(1) solid $green;
+    }
+
+    &__modules {
+        display: flex;
+        flex-direction: column;
+        gap: rem(8);
+
+        &__module {
+            height: rem(44);
+            box-sizing: border-box;
+            
+            display: flex;
+            align-items: center;
+            a {
+                margin-left: rem(16);
+                font-size: rem(20);
+                font-weight: 400;
+                line-height: rem(24);
+                letter-spacing: rem(1.5);
+                color: $black;
+            }
+        }
+    }
+}

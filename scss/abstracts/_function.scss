@@ -1,0 +1,16 @@
+// px to rem
+@function rem($px, $base : 10) {
+    // 실측값(-피그마 픽셀) / 기준폰트값(-html요소에 지정한 폰트크기) = rem
+    // 40px / 10px = 4rem   <-- 단위가 다름
+    // (숫자값 / 숫자값)  * 1rem = 4rem
+
+    $sum : $px / $base;
+    @return $sum + rem;
+}
+
+// px to vw 
+@function vw($px, $base: 360) {
+    // ((100 * 실측값) / 전체 해상도값) * 1vw;
+    $sum : (100 * $px) / $base;
+    @return  $sum + vw;
+}

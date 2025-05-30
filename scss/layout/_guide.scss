@@ -1,0 +1,35 @@
+.guide {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-bottom: 2px solid $black;
+
+}
+
+.colorbook {
+    display: flex;
+    gap: rem(16);
+    margin-bottom: rem(16);
+
+    &__box {
+        width: rem(64);
+        height: rem(64);
+
+        &.green {background-color: $green;}
+        &.lime {background-color: $lime;}
+
+        &.beige01 {background-color: $beige01;}
+        &.beige02 {background-color: $beige02;}
+        &.beige09 {background-color: $beige09;}
+
+        &.gray01 {background-color: $gray01;}
+        &.gray02 {background-color: $gray02;}
+        &.gray03 {background-color: $gray03;}
+        &.gray04 {background-color: $gray04;}
+        &.gray05 {background-color: $gray05;}
+        
+        &.white02 {
+            background-color: $white02;
+            border: 1px solid $black;
+        }
+    }
+}

@@ -1,0 +1,128 @@
+.table {
+    display: flex;
+    flex-direction: column;
+    
+    &__top {
+        margin-bottom: rem(12);
+    }
+    &__tab {
+        display: flex;
+        height: rem(42);
+        margin-left: rem(6);
+
+        display: flex;
+        align-items: flex-end;
+        
+        &__filter {
+            width: rem(120);
+            height: rem(32);
+            border: 1px solid $green;
+            border-top-left-radius: rem(12);
+            border-top-right-radius: rem(12);
+            border-bottom: none;
+            box-sizing: border-box;
+            background-color: $green040;
+
+            color: $white;
+
+            &.active {
+                height: rem(40);
+                background-color: $green;
+            }
+        }
+    }
+    &__table {
+        width: 100%;
+        table-layout: fixed;
+        margin-bottom: rem(24);
+
+        border-collapse: separate;
+        border-spacing: 0; /* 셀 간 간격 제거 */
+        border-radius: rem(8);
+        overflow: hidden;
+        
+        thead {
+            background-color: $beige09;
+        }
+        tr {
+            height: rem(48);
+        }
+        th, td {
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            border: 1px solid $green;
+            border-left: none;
+            border-top: none;
+            padding: 0 rem(8);
+        }
+        &__img {
+            width: rem(40);
+            height: rem(40);
+            margin: rem(4);
+            object-fit: contain;
+            border-radius: rem(12);
+        }
+        &__functions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__index {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: rem(8);
+            &__thumb {
+                font-size: rem(32);
+            }
+        }
+    }
+
+    &__paging {
+        height: rem(24);
+        display: flex;
+        gap: rem(8);
+        &__btn {
+            min-width: rem(24);
+            height: rem(24);
+            border-radius: rem(4);
+            
+            opacity: 0.5;
+            color: $black;
+            background-color: $green040;
+            &.active {
+                opacity: 1;
+                color: $white;
+                background-color: $green;
+            }
+        }
+        .lg-bold {
+            font-size: rem(24);
+        }
+    }
+}
+
+
+// 테이블 사각 border 둥글게
+.table__table tr:first-child th:first-child {   // 좌상단
+    border-top-left-radius: rem(8);
+}
+.table__table tr:first-child th:last-child {   // 우상단
+border-top-right-radius: rem(8);
+}
+.table__table tr:last-child td:first-child {   // 좌하단
+border-bottom-left-radius: rem(8);
+}
+.table__table tr:last-child td:last-child {   // 우하단
+border-bottom-right-radius: rem(8);
+}
+// 셀과 셀 사이 중복 border 없애기
+.table__table tr:first-child th {
+  border-top: 1px solid $green;
+}
+.table__table tr td:first-child,
+.table__table tr th:first-child {
+  border-left: 1px solid $green;
+}

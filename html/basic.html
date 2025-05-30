@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퍼블리싱</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header align both">
+        <div class="header__left align both">
+            <button class="btn-logo"></button>
+            <span class="header__icon">🍔</span>
+        </div>
+        <div class="header__right align both">
+            <span class="xl-bold-title">페이지 이름</span>
+            <span class="header__icon">🙋🏽‍♀️</span>
+        </div>
+    </header>
+    <div class="main-container">
+        <nav class="nav">
+            <div class="nav__section">
+                <div class="nav__section__title align both">
+                    <div class="div_with_emoji">
+                        <span class="lg-bold emoji_mgb02">💰</span>
+                        <span class="md-bold">예약 주문서 관리</span>
+                    </div>
+                    <span class="lg-bold">📘</span>
+                </div>
+                <ul class="nav__section__title__sub">
+                    <li class="nav__section__title__sub-title md-reg">홀케이크 주문서</li>
+                    <li class="nav__section__title__sub-title md-reg">구움과자 주문서</li>
+                </ul>
+            </div>
+            <div class="nav__section">
+                <div class="nav__section__title align both">
+                    <div class="div_with_emoji">
+                        <span class="lg-bold emoji_mgb02">🎂</span>
+                        <span class="md-bold">홀케이크</span>
+                    </div>
+                    <span class="lg-bold">📘</span>
+                </div>
+                <ul class="nav__section__title__sub">
+                    <li class="nav__section__title__sub-title md-reg">홀케이크 판매</li>
+                    <li class="nav__section__title__sub-title md-reg">홀케이크 옵션</li>
+                    <li class="nav__section__title__sub-title md-reg">홀케이크 픽업시간</li>
+                </ul>
+            </div>
+            <div class="nav__section">
+                <div class="nav__section__title align both active">
+                    <div class="div_with_emoji">
+                        <span class="lg-bold">🍪</span>
+                        <span class="md-bold">구움과자</span>
+                    </div>
+                    <span class="lg-bold">📖</span>
+                </div>
+                <ul class="nav__section__title__sub">
+                    <li class="nav__section__title__sub-title active md-reg">구움과자 판매</li>
+                    <li class="nav__section__title__sub-title md-reg">구움과자 상품</li>
+                    <li class="nav__section__title__sub-title md-reg">구움과자 픽업시간</li>
+                </ul>
+            </div>
+            <div class="nav__section">
+                <div class="nav__section__title align both">
+                    <div class="div_with_emoji">
+                        <span class="lg-bold emoji_mgb02">📝</span>
+                        <span class="md-bold">게시판</span>
+                    </div>
+                    <span class="lg-bold">📘</span>
+                </div>
+                <ul class="nav__section__title__sub">
+                    <li class="nav__section__title__sub-title md-reg">텍스트 배너</li>
+                    <li class="nav__section__title__sub-title md-reg">공지사항</li>
+                    <li class="nav__section__title__sub-title md-reg">영업일</li>
+                </ul>
+            </div>
+            <div class="nav__section">
+                <div class="nav__section__title align both">
+                    <div class="div_with_emoji">
+                        <span class="lg-bold emoji_mgt02">👩🏻</span>
+                        <span class="md-bold">회원 관리</span>
+                    </div>
+                    <span class="lg-bold">📘</span>
+                </div>
+            </div>
+        </nav>
+        <main class="main column_24">
+
+            <!-- 검색 섹션 -->
+            <section class="paper">
+                <div class="search">
+                    <p class="lg-bold">검색</p>
+                    <!-- 인풋 -->
+                    <div class="search__mid">
+                        <div class="search__mid__box">
+                            <p class="md-bold">검색 타이틀</p>
+                            <input type="text" class="sm-reg search__mid__box__input no-input" value="미리 넣어둔 값">
+                        </div>
+                        <div class="search__mid__box">
+                            <p class="md-bold">검색 타이틀</p>
+                            <input type="text" class="sm-reg search__mid__box__input" value="미리 넣어둔 값">
+                            <input type="text" class="sm-reg search__mid__box__input" value="미리 넣어둔 값">
+                            <input type="text" class="sm-reg search__mid__box__input" value="미리 넣어둔 값">
+                            <input type="text" class="sm-reg search__mid__box__input" value="미리 넣어둔 값">
+                        </div>
+                    </div>
+                    <!-- 버튼 -->
+                    <div class="search__btm align right">
+                        <button class="md-reg btn-normal txt-color-green">초기화</button>
+                        <button class="emoji-btn green">
+                            <div class="div_with_emoji">
+                                <span class="md-reg emoji_mgb02">🔍</span>
+                                <span class="md-reg txt-color-white">검색</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 테이블 섹션 -->
+            <section class="paper">
+                <div class="table">
+                    <!-- 상단 -->
+                    <div class="align both table__top">
+                        <span class="lg-bold">테이블 이름</span>
+                        <button class="emoji-btn green">
+                            <div class="div_with_emoji">
+                                <span class="lg-reg emoji_mgb02">✨</span>
+                                <span class="md-reg txt-color-white">구움과자 추가</span>
+                            </div>
+                        </button>
+                    </div>
+                    <!-- 구움과자 필터 -->
+                    <ul class="table__tab">
+                        <li><button class="md-reg table__tab__filter active">🍀 전체</button></li>
+                        <li><button class="md-reg table__tab__filter">🧈 휘낭시에</button></li>
+                        <li><button class="md-reg table__tab__filter">🍰 조각케이크</button></li>
+                        <li><button class="md-reg table__tab__filter">🥮 스콘</button></li>
+                        <li><button class="md-reg table__tab__filter">🥨 오늘의 메뉴</button></li>
+                    </ul>
+                    <!-- 중단 -->
+                    <table class="table__table">
+                        <colgroup>
+                            <col style="width: 5%;">  <!-- 번호 -->
+                            <col style="width: 7%;">  <!-- 이미지 -->
+                            <col style="width: 10%;">  <!-- 상품유형 -->
+                            <col style="width: 20%;">  <!-- 상품명 -->
+                            <col style="width: 10%;">  <!-- 가격 -->
+                            <col style="width: 37%;">  <!-- 상품 설명 -->
+                            <col style="width: 10%;">  <!-- 기능 -->
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="md-bold">번호</th>
+                                <th class="md-bold">이미지</th>
+                                <th class="md-bold">상품유형</th>
+                                <th class="md-bold">상품명</th>
+                                <th class="md-bold">순서 변경</th>  <!-- 참고용 -->
+                                <th class="md-bold">상품 설명</th>
+                                <th class="md-bold">기능</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="md-reg">1</td>
+                                <td class="">
+                                    <img src="../images/2_크림치즈에그스콘.jpg" alt="" class="table__table__img">
+                                </td>
+                                <td class="md-reg">오늘의 메뉴</td>
+                                <td class="md-reg">[신메뉴] 크림치즈 에그스콘</td>
+                                <td class="">
+                                    <div class="table__table__index">
+                                        <button class="table__table__index__thumb">👍🏽</button>
+                                        <button class="table__table__index__thumb">👎🏼</button>
+                                    </div>
+                                </td>
+                                <td class="md-reg">✨포레포레 신상✨ 고메버터 + 크림치즈 환상조합!</td>
+                                <td class="">
+                                    <div class="table__table__functions">
+                                        <button class="lg-reg">👀</button>
+                                        <button class="lg-reg">✍🏽</button>
+                                        <button class="lg-reg">🗑️</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- 하단 -->
+                    <div class="align center">
+                        <ul class="table__paging">
+                            <li class="align center"><button class="lg-bold">👈🏽</button></li>
+    
+                            <li><button class="align center md-reg table__paging__btn">3</button></li>
+                            <li><button class="align center md-reg table__paging__btn">4</button></li>
+                            <li><button class="align center md-reg table__paging__btn">5</button></li>
+                            <li><button class="align center md-reg table__paging__btn active">6</button></li>
+                            <li><button class="align center md-reg table__paging__btn">7</button></li>
+                            <li><button class="align center md-reg table__paging__btn">8</button></li>
+                            <li><button class="align center md-reg table__paging__btn">9</button></li>
+    
+                            <li class="align center"><button class="lg-bold">👉🏽</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

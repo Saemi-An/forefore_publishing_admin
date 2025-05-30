@@ -1,0 +1,15 @@
+// 아이폰 아이콘과 텍스트 함께 쓸 때 라인 잡아주기
+.div_with_emoji {
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+    .emoji_mgt02 {
+        margin-top: rem(2);
+    }
+    .emoji_mgb02 {
+        margin-bottom: rem(2);
+    }
+    .emoji_mgb04 {
+        margin-bottom: rem(4);
+    }
+}

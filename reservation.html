@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퍼블 - 예약내역 조회</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="reservation_body">
+    <!-- 모달 -->
+    <div class="normal-modal-bg">
+        <div class="normal-modal">
+            <p class="lg-bold">조회 실패</p>
+            <div class="normal-modal__txt">
+                <p class="md-reg">예약 내역을 찾을 수 없습니다.</p>
+                <p class="md-reg">입력하신 정보를 확인해 주세요.</p>
+            </div>
+            <div class="normal-modal__btnsct align both">
+                <button class="btn-insideout sm-reg">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 페이지 헤더 -->
+    <header class="page-header">
+        <h1 class="xl-bold-title">예약 내역 조회</h1>
+        <div>
+            <button class="btn-prev" aria-label="뒤로가기"></button>
+        </div>
+    </header>
+    <!-- 메인 -->
+    <main class="mg16_lr reservation_main">
+        <div></div>
+        
+        <div class="reservation">
+            <!-- 로고 -->
+            <div class="reservation__logo">
+                <img src="../publishing/images/logo.svg" alt="">
+            </div>
+            <!-- 폼 -->
+            <form action="">
+                <div class="reservation__input">
+                    <!-- 이름 -->
+                    <div class="reservation__input__each">
+                        <label class="md-reg">이름</label>
+                        <input class="md-reg" type="text" maxlength="5" placeholder="구매자 이름">
+                        <p class="sm-reg error-msg">입력해 주세요.</p>
+                    </div>
+                    <!-- 연락처 -->
+                    <div class="reservation__input__each">
+                        <label class="md-reg">연락처</label>
+                        <input class="md-reg" type="text" maxlength="13" placeholder="구매자 연락처">
+                        <p class="sm-reg error-msg"></p>   <!-- 에러: 입력해 주세요. / 11자리 숫자 입력. -->
+                    </div>
+                    <!-- 주문번호 -->
+                    <div class="reservation__input__each">
+                        <label class="md-reg">주문번호</label>
+                        <input class="md-reg" type="text" maxlength="14" placeholder="주문 번호">
+                        <p class="sm-reg error-msg"></p>   <!-- 에러: 입력해 주세요. -->
+                    </div>
+                </div>
+                <div class="reservation__btn">
+                    <button class="btn-normal">예약 내역 조회하기</button>
+                </div>
+            </form>
+        </div>
+
+        <div></div>
+    </main>
+</body>
+</html>
+
+
+<div>
+    <p></p>
+</div>

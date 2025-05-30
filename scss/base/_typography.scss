@@ -1,0 +1,68 @@
+// SUIT 폰트
+@import url("https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css");
+html, body {
+    font-family: 'SUIT Variable', sans-serif;;
+}
+html { font-size: 62.5%; }   // <-- 10px (X)
+body { font-size: 1rem; }
+
+// SMALL
+.sm-reg {
+    font-size: rem(12);
+    font-weight: 400;
+    line-height: normal;
+    color: $black;
+}
+.sm-bold {
+    font-size: rem(12);
+    font-weight: 700;
+    line-height: normal;
+    color: $black;
+}
+// MEDIUM
+.md-reg {
+    font-size: rem(16);
+    font-weight: 400;
+    line-height: normal;
+    color: $black;
+}
+.md-bold {
+    font-size: rem(16);
+    font-weight: 700;
+    line-height: normal;   // 피그마에서 auto로 되어 있음
+    color: $black;
+}
+// LARGE
+.lg-reg {
+    font-size: rem(20);
+    font-weight: 400;
+    line-height: normal;
+    color: $black;
+}
+
+.lg-bold {
+    font-size: rem(20);
+    font-weight: 700;
+    line-height: normal;
+    color: black;
+}
+// X-LARGE
+.xl-bold-title {
+    font-size: rem(24);
+    font-weight: 700;
+    line-height: rem(64);
+    color: $black;
+}
+
+// 텍스트 컬러
+.txt-color {
+    &-green {
+        color: $green;
+    }
+    &-white {
+        color: $white;
+    }
+    &-gray05 {
+        color: $gray05;
+    }
+}

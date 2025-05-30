@@ -1,0 +1,70 @@
+@mixin position($x, $xvalue, $y:null, $yvalue:null) {
+    position: absolute;
+
+    // css 속성은 변수지정이 불가능하기 때문에 변수보호(#{})를 해줘야한다
+    #{$x}: $xvalue;   // 자식태그의 "왼쪽끝"이 부모태그의 50% 위치에 놓인다
+    #{$y}: $yvalue;
+    // bottom & right 주려면 +50%이 들어가야함으로 해당 함수 사용 불가!
+
+    @if $xvalue == 50% and $yvalue == 50% {
+        transform: translate(-50%, -50%);
+    }@else if $xvalue == 50% {
+        transform: translateX(-50%);   // 따라서 "자식태그 너비의 50%만큼" 왼쪽으로 이동(-)시켜야 제대로 수평중앙정렬이 먹는다.
+    }@else if $yvalue == 50% {
+        transform: translateY(-50%);
+    }
+}
+
+// 배경이미지
+@mixin bg($file_name, $x:null, $y:null, $width:null, $height:null) {
+    background: url(#{$imgurl}#{$file_name}) no-repeat $x $y;   // #{} 으로 문자보관
+    background-size: $width $height;
+}
+
+// 버튼
+$btnSet:
+    'btn-normal' inherit,
+    'btn-green' $green,
+;
+@each $class, $bgColor in $btnSet {
+    .#{$class} {
+        min-width: rem(88);
+        height: rem(40);
+        border: 1px solid $green;
+        border-radius: rem(12);
+        padding: rem(8);
+        box-sizing: border-box;
+
+        background-color: $bgColor;
+    }
+}
+
+// // 뱃지
+// $badgeSet: 
+//     'black' 28 16.5 $black $black 28 16 $white,
+//     'primary' 28 16.5 $primary $primary 28 16 $white
+// ;
+// // 클래스명, 높이, 배경색, 보더색, 레디우스, 폰트사이즈, 폰트컬러
+// @each $class, $height, $pad, $bgColor, $borderColor, $radius, $fontSize, $color in $badgeSet {
+//     .#{$class} {
+//         height: rem($height);
+//         padding: 0 rem($pad);
+//         background-color: $bgColor;
+//         border: rem(1) solid $borderColor;
+//         border-radius: rem($radius);
+//         font-size: rem($fontSize);
+//         color: $color;
+//         box-sizing: border-box;
+//     }
+// }
+
+// IR
+@mixin hide {
+    overflow: hidden;
+    position: absolute;
+    border: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+.hide { @include hide; }

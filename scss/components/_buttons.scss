@@ -1,0 +1,54 @@
+.btn {
+    &-logo {
+        @include bg('logo.svg', center, null, rem(167), auto);
+        width: rem(167);
+        height: rem(42);
+        background-size: contain;
+    }
+    &-hamburger {
+        // background: url(../images/hamburger.svg) no-repeat center / rem(40) auto;   // css 파일 기준으로 이미지 파일이 있는 경로 적어줘야함! --> ../images/arrow-left.svg, 아니면 절대경로 적어주기
+        // background에서 / 뒤는 background-size: width height를 의미함. (html 폰트사이즈가 커지면 이미지도 같이 커질 수 있도록 추가됨)
+        @include bg('hamburger.svg', center, null, rem(40), auto);
+        width: rem(40);
+        height: rem(40);
+        animation: moving 3s linear infinite alternate;
+        
+        &-active {   // 장바구니에 담긴거 있을때 active
+            @include bg('hamburger-active.svg', center, null, rem(40), auto);
+            width: rem(40);
+            height: rem(40);
+            animation: moving 3s linear infinite alternate;
+        }
+    }
+    &-prev {
+        @include bg('arrow-left.svg', center, null, rem(48), auto);
+        width: rem(48);
+        height: rem(48);
+    }
+    &-close {
+        @include bg('close.svg', center, null, rem(40), auto);
+        width: rem(40);
+        height: rem(40);
+    }
+}
+
+// 간단한 구조의 버튼은 mixin에서 정의됨
+
+// 이모티콘 있는 버튼
+.emoji-btn {
+    min-width: rem(88);
+    height: rem(40);
+    padding: rem(8) rem(12);
+    border: 1px solid $green;
+    border-radius: rem(12);
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(4);
+
+    &.green {
+        background-color: $green;
+    }
+}

@@ -1,0 +1,37 @@
+.search {
+    display: flex;
+    flex-direction: column;
+    gap: rem(8);
+
+    &__mid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: rem(16);
+
+        &__box {
+            display: flex;
+            flex-direction: column;
+            gap: rem(8);
+
+            &__input {
+                width: 100%;
+                height: rem(32);
+                border: 1px solid $gray05;
+                border-radius: rem(8);
+                padding: rem(8);
+                box-sizing: border-box;
+                background-color: $white02;
+                &.no-input {
+                    pointer-events: none;
+                    background-color: $beige09;
+                    opacity: 0.5;
+                }
+            
+            }
+        }
+    }
+
+    &__btm {
+        gap: rem(8);
+    }
+}
