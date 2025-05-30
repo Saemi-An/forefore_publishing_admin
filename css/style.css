@@ -224,6 +224,9 @@ body {
 .txt-color-gray05 {
   color: #8C8C8C;
 }
+.txt-color-orange {
+  color: #FF5D00;
+}
 
 .align {
   display: flex;
@@ -1028,7 +1031,6 @@ body {
   top: 40%;
   transform: translate(-50%, -40%);
   width: 48rem;
-  padding: 0.8rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1044,8 +1046,30 @@ body {
   margin-bottom: 2.4rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 1.6rem;
 }
 .login__sect__input input {
   width: 24rem;
+}
+.login__sect__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.8rem;
+}
+.login__sect__btn__btn {
+  width: 12rem;
+  height: 4rem;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid #39744c;
+  border-radius: 1.2rem;
+  color: #FFFFFF;
+  background-color: #39744c;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
 }/*# sourceMappingURL=style.css.map */
