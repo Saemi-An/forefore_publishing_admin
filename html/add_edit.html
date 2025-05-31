@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>퍼블리싱</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../test.js" defer></script>
+</head>
+<body>
+  <header class="header align both">
+    <div class="header__left align both">
+      <button class="btn-logo"></button>
+      <span class="header__icon">🍔</span>
+    </div>
+    <div class="header__right align both">
+      <span class="xl-bold-title">페이지 이름</span>
+      <span class="header__icon">🙋🏽‍♀️</span>
+    </div>
+  </header>
+  <div class="main-container">
+    <nav class="nav">
+      <div class="nav__section">
+        <div class="nav__section__title align both">
+          <div class="div_with_emoji">
+            <span class="lg-bold emoji_mgb02">💰</span>
+            <span class="md-bold">예약 주문서 관리</span>
+          </div>
+          <span class="lg-bold">📘</span>
+        </div>
+        <ul class="nav__section__title__sub">
+          <li class="nav__section__title__sub-title md-reg">홀케이크 주문서</li>
+          <li class="nav__section__title__sub-title md-reg">구움과자 주문서</li>
+        </ul>
+      </div>
+      <div class="nav__section">
+        <div class="nav__section__title align both">
+          <div class="div_with_emoji">
+            <span class="lg-bold emoji_mgb02">🎂</span>
+            <span class="md-bold">홀케이크</span>
+          </div>
+          <span class="lg-bold">📘</span>
+        </div>
+        <ul class="nav__section__title__sub">
+          <li class="nav__section__title__sub-title md-reg">홀케이크 판매</li>
+          <li class="nav__section__title__sub-title md-reg">홀케이크 옵션</li>
+          <li class="nav__section__title__sub-title md-reg">홀케이크 픽업시간</li>
+        </ul>
+      </div>
+      <div class="nav__section">
+        <div class="nav__section__title align both active">
+          <div class="div_with_emoji">
+            <span class="lg-bold">🍪</span>
+            <span class="md-bold">구움과자</span>
+          </div>
+          <span class="lg-bold">📖</span>
+        </div>
+        <ul class="nav__section__title__sub">
+          <li class="nav__section__title__sub-title active md-reg">구움과자 판매</li>
+          <li class="nav__section__title__sub-title md-reg">구움과자 상품</li>
+          <li class="nav__section__title__sub-title md-reg">구움과자 픽업시간</li>
+        </ul>
+      </div>
+      <div class="nav__section">
+        <div class="nav__section__title align both">
+          <div class="div_with_emoji">
+            <span class="lg-bold emoji_mgb02">📝</span>
+            <span class="md-bold">게시판</span>
+          </div>
+          <span class="lg-bold">📘</span>
+        </div>
+        <ul class="nav__section__title__sub">
+          <li class="nav__section__title__sub-title md-reg">텍스트 배너</li>
+          <li class="nav__section__title__sub-title md-reg">공지사항</li>
+          <li class="nav__section__title__sub-title md-reg">영업일</li>
+        </ul>
+      </div>
+      <div class="nav__section">
+        <div class="nav__section__title align both">
+          <div class="div_with_emoji">
+            <span class="lg-bold emoji_mgt02">👩🏻</span>
+            <span class="md-bold">회원 관리</span>
+          </div>
+          <span class="lg-bold">📘</span>
+        </div>
+      </div>
+    </nav>
+    <main class="main">
+      
+      <form action="" class="column_24">
+        <section class="paper">
+          <p class="lg-bold">구움과자 상품 등록</p>
+          
+          <section class="form">
+
+            <p class="lg-bold form__title">상품 정보</p>
+
+            <div class="form__group">
+
+              <div class="form__group__elem">
+                <div class="gorm__group__elem__sub-title">
+                  <span class="md-bold">상품 유형</span>
+                  <span class="md-bold txt-color-orange">*</span>
+                </div>
+                <select name="" id="" class="md-reg">
+                  <option value="" class="md-reg" selected>옵션을 선택해 주세요.</option>
+                  <option value="" class="md-reg">옵션 1</option>
+                  <option value="" class="md-reg">옵션 2</option>
+                  <option value="" class="md-reg">옵션 3</option>
+                </select>
+              </div>
+
+              <div class="form__group__elem">
+                <span class="md-bold">상품명</span>
+                <input type="text" class="md-reg" placeholder="입력해 주세요.">
+                <span class="sm-reg txt-color-orange mgl4">필수 입력값 입니다.</span>
+              </div>
+
+              <div class="form__group__elem">
+                <span class="md-bold">상품 설명</span>
+                <textarea name="" id="" rows="4" class="md-reg" placeholder="입력해 주세요."></textarea>
+              </div>
+
+              <div class="form__group__elem">
+                <span class="md-bold">상품 이미지</span>
+                <span class="sm-reg txt-color-gray09">정사각형 비율의 최대 2MB의 이미지 파일(jpg, jpeg, png)을 업로드 해주세요.</span>
+                <div class="form__group__elem__upload">
+                  <label for="fileUpload" class="md-reg" id="customLabel">파일 선택</label>
+                  <span class="md-reg txt-color-gray09" id="customSpan">선택된 파일 없음</span>
+                  <input type="file" id="fileUpload" accept="image/*" class="display-none">
+                </div>
+                <span class="sm-reg txt-color-orange mgl4">필수 입력값 입니다.</span>
+              </div>
+
+              <div class="form__group__elem">
+                <span class="md-bold">시간</span>
+                <div class="form__group__elem__time">
+                  <div class="align both">
+                    <select name="" id="" class="md-reg">
+                      <option value="" class="md-reg" selected>선택</option>
+                      <option value="" class="md-reg">옵션 1</option>
+                      <option value="" class="md-reg">옵션 2</option>
+                      <option value="" class="md-reg">옵션 3</option>
+                    </select>
+                    <span class="md-reg">부터</span>
+                  </div>
+                  <div class="align both">
+                    <select name="" id="" class="md-reg">
+                      <option value="" class="md-reg" selected>선택</option>
+                      <option value="" class="md-reg">옵션 1</option>
+                      <option value="" class="md-reg">옵션 2</option>
+                      <option value="" class="md-reg">옵션 3</option>
+                    </select>
+                    <span class="md-reg">까지</span>
+                  </div>
+                </div>
+                <span class="sm-reg txt-color-orange mgl4">필수 입력값 입니다.</span>
+              </div>
+
+            </div>
+          </section>
+
+          <section class="form">
+            <p class="lg-bold form__title">픽업 시간</p>
+            <div class="form__group">
+
+              <div class="form__group__elem">
+                <div class="gorm__group__elem__sub-title">
+                  <span class="md-bold">상품 유형</span>
+                  <span class="md-bold txt-color-orange">*</span>
+                </div>
+                <select name="" id="" class="md-reg">
+                  <option value="" class="md-reg" selected>옵션을 선택해 주세요.</option>
+                  <option value="" class="md-reg">옵션 1</option>
+                  <option value="" class="md-reg">옵션 2</option>
+                  <option value="" class="md-reg">옵션 3</option>
+                </select>
+              </div>
+
+              <div class="form__group__elem">
+                <span class="md-bold">상품명</span>
+                <input type="text" class="md-reg" placeholder="입력해 주세요.">
+                <span class="sm-reg txt-color-orange mgl4">필수 입력값 입니다.</span>
+              </div>
+
+            </div>
+          </section>
+        
+        </section>
+  
+        <section class="align both">
+          <button class="md-reg btn-normal txt-color-green">뒤로가기</button>
+          <div class="view-btn">
+            <button class="emoji-btn green">
+              <div class="div_with_emoji">
+                <span class="md-reg emoji_mgb04">✍🏽</span>
+                <span class="md-reg txt-color-white">수정하기</span>
+              </div>
+            </button>
+            <button class="emoji-btn green">
+              <div class="div_with_emoji">
+                <span class="md-reg emoji_mgb04">🗑️</span>
+                <span class="md-reg txt-color-white">삭제하기</span>
+              </div>
+            </button>
+          </div>
+        </section>
+      </form>
+
+    </main>
+  </div>
+</body>
+</html>

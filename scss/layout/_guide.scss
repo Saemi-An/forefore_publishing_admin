@@ -15,8 +15,14 @@
         height: rem(64);
 
         &.green {background-color: $green;}
+        &.green040 {background-color: $green040;}
         &.lime {background-color: $lime;}
+        &.lime090 {background-color: $lime090;}
 
+        &.orange {background-color: $orange;}
+        &.orange080 {background-color: $orange080;}
+
+        &.beige00 {background-color: $beige00;}
         &.beige01 {background-color: $beige01;}
         &.beige02 {background-color: $beige02;}
         &.beige09 {background-color: $beige09;}
@@ -26,10 +32,13 @@
         &.gray03 {background-color: $gray03;}
         &.gray04 {background-color: $gray04;}
         &.gray05 {background-color: $gray05;}
+        &.gray09 {background-color: $gray09;}
         
-        &.white02 {
-            background-color: $white02;
-            border: 1px solid $black;
-        }
+    }
+}
+
+.for-guide-only {
+    .toast {
+        position: static !important;
     }
 }

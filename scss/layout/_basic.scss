@@ -25,10 +25,10 @@
 }
 .main-container {
     margin-top: rem(60);
-    display: grid;
-    grid-template-columns: rem(228) auto;
+    display: flex;
 }
 .nav {
+    min-width: rem(228);
     height: 100vh;
     background-color: $beige09;
     border-right: 2px solid $green;
@@ -66,4 +66,5 @@
 }
 .main {
     margin: rem(24);
+    width: 100%;
 }

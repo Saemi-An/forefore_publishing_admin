@@ -1,12 +1,17 @@
-// 어드민
-$white: #FFFFFF;
 $black: #000000;
+$white: #FFFFFF;
 
 $green: #39744c;
 $green040: rgba(33, 77, 47, 0.4);
-$lime: #6ad68d;
 
-$beige01: #FFFAF0;   // floralwhite
+$lime: #6ad68d;
+$lime090: rgba(144, 238, 144, 0.9);
+
+$orange: #FF5D00;
+$orange080: rgba(255, 133, 0, 0.8);
+
+$beige00: #FFFCF5;
+$beige01: #FFFAF0;
 $beige02: #F8F5EC;
 $beige09: #EFE5CA;
 // $beige09: #f2ddb2;   // 맥북용
@@ -17,13 +22,17 @@ $gray02: #EAEAEA;
 $gray03: #D9D9D9;
 $gray04: #B0B0B0;
 $gray05: #8C8C8C;
+$gray09: #414141;
 
-$white02: #fffcf5;
+
+
+
+
+// 추후 삭제 필요
 
 // 이미지 경로
 $imgurl: "../images/";   // style.css CSS 파일 기준으로 넣어줘야함
 
-// 추후 삭제 필요
 // $white02: rgba(255, 255, 255, 0.2);
 $white04: rgba(255, 255, 255, 0.4);
 $white06: rgba(255, 255, 255, 0.6);
@@ -33,6 +42,5 @@ $black02: rgba(0, 0, 0, 0.2);
 $disable1: #424242;
 $disable2: #808080;
 
-$orange: #FF5D00;
 $orange_light: #FB9A62;
 $orange06: rgba(255, 93, 0, 0.6);
