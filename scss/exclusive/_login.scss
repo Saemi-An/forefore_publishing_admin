@@ -33,6 +33,12 @@
             gap: rem(16);
             input {
                 width: rem(240);
+                height: rem(32);
+                border: 1px solid $gray05;
+                border-radius: rem(8);
+                padding: rem(8);
+                box-sizing: border-box;
+                background-color: $beige00;
             }
         }
         &__btn {

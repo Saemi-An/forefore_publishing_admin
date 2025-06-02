@@ -37,6 +37,7 @@
             }
             textarea {
                 height: auto;
+                font-family: 'SUIT Variable', sans-serif;
             }
             &__upload {
                 display: flex;
@@ -58,6 +59,15 @@
                     justify-content: center;
                 }
             }
+            &__preview {
+                margin-left: rem(96);
+                img {
+                    width: rem(264);
+                    aspect-ratio: 1/1;
+                    object-fit: contain;
+                    border-radius: rem(24);
+                }
+            }
             &__time {
                 width: rem(360);
                 display: grid;
@@ -69,5 +79,15 @@
 
             }
         }
+    }
+}
+
+// =========== 장고 모델폼 커스텀용 ===========
+.add_md-reg_class_to_options {
+    option {
+        font-size: rem(16);
+        font-weight: 400;
+        line-height: normal;
+        color: $black;
     }
 }
