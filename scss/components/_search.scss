@@ -31,11 +31,6 @@
                 box-sizing: border-box;
                 background-color: $beige00;
             }
-            &.no-input {
-                pointer-events: none;
-                background-color: $beige09;
-                opacity: 0.5;
-            }
         }
     }
 

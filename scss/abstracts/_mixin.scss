@@ -15,6 +15,20 @@
     }
 }
 
+@mixin fixed_position($top, $left) {
+    position: fixed;
+    top: #{$top};
+    left: #{$left};
+    
+    @if $top == 50% and $left == 50% {
+        transform: translate(-50%, -50%);
+    }@else if $top == 50% {
+        transform: translateX(-50%)
+    }@else if $left == 50% {
+        transform: translateY(-50%);
+    }
+}
+
 // 배경이미지
 @mixin bg($file_name, $x:null, $y:null, $width:null, $height:null) {
     background: url(#{$imgurl}#{$file_name}) no-repeat $x $y;   // #{} 으로 문자보관

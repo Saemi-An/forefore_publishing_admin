@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>스타일</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="style.js" defer></script>
   <style>body{background-color: white;}</style>
 </head>
 <body>
@@ -20,6 +21,7 @@
       <li><a href="#guide_7" class="xl-bold-title">view-page</a></li>
       <li><a href="#guide_8" class="xl-bold-title">add/edit-page</a></li>
       <li><a href="#guide_9" class="xl-bold-title">toast</a></li>
+      <li><a href="#guide_10" class="xl-bold-title">modal</a></li>
     </ul>
 
     <!-- 글자 스타일 -->
@@ -374,18 +376,96 @@
     <!-- 토스트 메세지 -->
     <p class="xl-bold-title" id="guide_9">토스트 메세지</p>
     <div class="for-guide-only">
-      <ul class="toast">
-        <li class="toast success">
+      <ul class="toast show">
+        <li class="toast__li success">
           <span class="lg-bold">✅</span>
           <span class="md-bold txt-color-gray09">성공적으로 저장 되었습니다.</span>
         </li>
-        <li class="toast error">
+        <li class="toast__li error">
           <span class="lg-bold">☹️</span>
           <span class="md-bold txt-color-gray09">오늘 접수된 주문건이 없습니다.</span>
         </li>
       </ul>
     </div>
-
+    <button type="button" class="md-reg btn-normal txt-color-green" onclick="showToast()">토스트 메세지 효과 클릭</button>
+    <!-- 효과 보여주기용 - hidden -->
+    <ul class="toast" id="toastUl">
+      <li class="toast__li success">
+        <span class="lg-bold">✅</span>
+        <span class="md-bold txt-color-gray09">스르륵 나타났다가 스르륵 사라짐</span>
+      </li>
+    </ul>
+    <!-- 모달 -->
+    <p class="xl-bold-title" id="guide_10">모달</p>
+    <button class="md-reg btn-normal txt-color-green" onclick="showNormalModal()">일반 모달 클릭</button>
+    <button class="md-reg btn-green txt-color-white" onclick="showFormModal()">폼 모달 클릭</button>
+    <!-- 일반 모달 - hidden -->
+    <div class="modal" id="normalModal">
+      <div class="modal__cnt">
+        <p class="lg-bold">✨ 예약 판매 시작 ✨</p>
+        <div class="modal__cnt__txt">
+          <p class="md-reg">오늘의 구움과자 판매를</p>
+          <p class="md-reg">시작 하시겠습니까?</p>
+          <p class="md-reg">판매 중에는 <span class="md-bold txt-color-orange">픽업시간 변경이 불가능</span> 합니다.</p>
+        </div>
+        <div class="modal__cnt__btn">
+          <button class="md-reg btn-normal txt-color-green" onclick="closeNormalModal()">모달 닫기</button>
+          <button class="md-reg btn-green txt-color-white">확인</button>
+        </div>
+      </div>
+    </div>
+    <!-- 폼 모달 - hidden -->
+    <div class="modal" id="formModal">
+      <form class="modal__form">
+        <p class="lg-bold">⚡️ 판매 상품 추가 ⚡️</p>
+        <div class="modal__form__cnt">
+          <div class="modal__form__cnt__elem">
+            <div class="modal__form__cnt__elem__sub-title">
+              <p class="md-bold">판매 상품</p>
+              <span class="md-bold txt-color-orange">*</spans>
+            </div>
+            <select name="" id="" class="md-reg">
+              <option value="" class="md-reg" selected>선택</option>
+              <option value="" class="md-reg">옵션 1</option>
+              <option value="" class="md-reg">옵션 2</option>
+              <option value="" class="md-reg">옵션 3</option>
+            </select>
+          </div>
+          <div class="modal__form__cnt__elem">
+            <div class="modal__form__cnt__elem__sub-title">
+              <p class="md-bold">노출 상태</p>
+              <span class="md-bold txt-color-orange">*</spans>
+            </div>
+            <select name="" id="" class="md-reg">
+              <option value="" class="md-reg" selected>선택</option>
+              <option value="" class="md-reg">옵션 1</option>
+              <option value="" class="md-reg">옵션 2</option>
+              <option value="" class="md-reg">옵션 3</option>
+            </select>
+          </div>
+          <div class="modal__form__cnt__elem-double">
+            <div class="modal__form__cnt__elem">
+              <div class="modal__form__cnt__elem__sub-title">
+                <p class="md-bold">전체 재고 수량</p>
+                <span class="md-bold txt-color-orange">*</spans>
+              </div>
+              <input type="number" class="md-reg" placeholder="입력해 주세요.">
+            </div>
+            <div class="modal__form__cnt__elem">
+              <div class="modal__form__cnt__elem__sub-title">
+                <p class="md-bold">전체 재고 수량</p>
+                <span class="md-bold txt-color-orange">*</spans>
+              </div>
+              <input type="number" class="md-reg" placeholder="입력해 주세요.">
+            </div>
+          </div>
+        </div>
+        <div class="modal__form__btn">
+          <button type="button" class="md-reg btn-normal txt-color-green" onclick="closeFormModal()">모달 닫기</button>
+          <button class="md-reg btn-green txt-color-white">저장하기</button>
+        </div>
+      </form>
+    </div>
   </main>
 </body>
 </html>

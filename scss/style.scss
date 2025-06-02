@@ -5,7 +5,7 @@
 
 // base
 @import 'base/reset';   // 리셋, 노멀라이즈 css
-@import 'base/typography';   // 폰트정의
+@import 'base/typography';
 
 // layout
 @import 'layout/align';
@@ -22,9 +22,7 @@
 @import 'components/form';
 @import 'components/toast';
 @import 'components/buttons';   // 버튼
-@import 'components/gnb';   // 대메뉴
-@import 'components/tab';   // 탭메뉴
-@import 'components/modal';   // 모달
+@import 'components/modal';
 
 // exclusive
 @import 'exclusive/login';

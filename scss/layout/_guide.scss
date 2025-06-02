@@ -40,5 +40,7 @@
 .for-guide-only {
     .toast {
         position: static !important;
+        display: flex;
+        gap: rem(16);
     }
 }

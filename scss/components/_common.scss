@@ -7,3 +7,11 @@
 .display-none {
     display: none;
 }
+.no-input {
+    pointer-events: none;
+    opacity: 0.5;
+}
+.no-select {
+    pointer-events: none;
+    opacity: 0.3;
+}
