@@ -5,6 +5,18 @@
         height: rem(42);
         background-size: contain;
     }
+    &-check_on {
+        @include bg('check-on.svg', center, null, rem(24), auto);
+        width: rem(24);
+        height: rem(24);
+    }
+    &-check_off {
+        @include bg('check-off.svg', center, null, rem(24), auto);
+        width: rem(24);
+        height: rem(24);
+    }
+
+    // 안쓰는거 - 추후 삭제 필요
     &-hamburger {
         // background: url(../images/hamburger.svg) no-repeat center / rem(40) auto;   // css 파일 기준으로 이미지 파일이 있는 경로 적어줘야함! --> ../images/arrow-left.svg, 아니면 절대경로 적어주기
         // background에서 / 뒤는 background-size: width height를 의미함. (html 폰트사이즈가 커지면 이미지도 같이 커질 수 있도록 추가됨)
@@ -50,5 +62,8 @@
 
     &.green {
         background-color: $green;
+    }
+    &.on-sale {
+        background-color: $beige02;
     }
 }

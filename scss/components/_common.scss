@@ -3,6 +3,10 @@
     border: 1px solid $green;
     border-radius: rem(24);
     background-color: $beige01;
+
+    &.on-sale {
+        background-color: $green010;
+    }
 }
 .display-none {
     display: none;

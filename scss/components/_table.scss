@@ -22,12 +22,16 @@
             border-bottom: none;
             box-sizing: border-box;
             background-color: $green040;
-
             color: $white;
 
+            &.on-sale {
+                background-color: inherit;
+                color: $black;
+            }
             &.active {
                 height: rem(40);
                 background-color: $green;
+                color: white;
             }
         }
     }
@@ -43,6 +47,15 @@
         
         thead {
             background-color: $beige09;
+            &.on-sale {
+                background-color: $green040;
+            }
+        }
+        tbody {
+            background-color: $beige01;
+            &.on-sale {
+                background-color: $beige08;
+            }
         }
         tr {
             height: rem(48);
