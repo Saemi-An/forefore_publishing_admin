@@ -53,7 +53,6 @@ body { font-size: 1rem; }
     line-height: rem(64);
     color: $black;
 }
-
 // 텍스트 컬러
 .txt-color {
     &-green {
@@ -73,5 +72,8 @@ body { font-size: 1rem; }
     }
     &-navy {
         color: $navy;
+    }
+    &-blue {
+        color: $blue;
     }
 }
