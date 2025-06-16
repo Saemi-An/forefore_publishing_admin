@@ -29,6 +29,11 @@
                     object-fit: contain;
                     border-radius: rem(12); 
                 }
+                &__multi-line {
+                    display: flex;
+                    flex-direction: column;
+                    gap: rem(4);
+                }
             }
         }
         // 이미지 포함된 body
